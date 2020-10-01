@@ -1,0 +1,33 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "A storage for tiny algorithms and data-structures written in JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "tslint  -c ./tslint.json \"**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vpishuk/algorithms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vpishuk/algorithms/issues"
+  },
+  "homepage": "https://github.com/vpishuk/algorithms#readme",
+  "dependencies": {
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^14.11.2",
+    "chai": "^4.2.0",
+    "mocha": "^8.1.3",
+    "prettier": "^2.1.2",
+    "ts-node": "^9.0.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.3.0",
+    "typescript": "^4.0.3"
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "extends": ["tslint:recommended", "tslint-plugin-prettier", "tslint-config-prettier"],
+    "linterOptions": {
+      "exclude": [
+          "**/node_modules/**/*"
+      ]
+    },
+    "rules": {
+      "prettier": [
+        true,
+        {
+          "trailingComma": "none",
+          "singleQuote": true,
+          "tabWidth": 4,
+          "printWidth": 120,
+          "arrowParens": "avoid"
+        }
+      ],
+      "no-bitwise": false,
+      "linebreak-style": [true, "LF"]
+    }
+  }
