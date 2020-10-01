@@ -1,6 +1,6 @@
 # Find a hole
 
-## The task
+## The problem
 The configurations are represented as an array of objects.
 Each object has a property `register` from 0 to N and a property `bitString`.
 `bitString` is a binary representation of a number with leading zeroes such as `000010`.
