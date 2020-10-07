@@ -22,8 +22,10 @@ export function findAHole(configurations: Configurations[], bitStringLength: num
     let currentBitString = 1;
 
     for (let i = 0; i < configurations.length; i++) {
-        // switch bitArray to 1 because we switched to the next register
         if (register < configurations[i].register) {
+            if (currentBitString < maxBitStringValue) {
+                break;
+            }
             currentBitString = 1;
         }
 
@@ -48,8 +50,8 @@ export function findAHole(configurations: Configurations[], bitStringLength: num
         }
 
         // taking into consideration that array is sorted
-        // if bitArray is less then current bitArray then we have a free spot
-        // if bitArray is bigger then current bitArray, then we need to check the next value
+        // if bitString is less then current bitString then we have a free spot
+        // if bitString is bigger then current bitString, then we need to check the next value
         if (currentBitString < integer) {
             break;
         }

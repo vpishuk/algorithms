@@ -28,6 +28,17 @@ describe('FindAHole', () => {
         next?.should.have.property('bitString', bit.toString(2).padStart(16, '0'));
     });
 
+    it('should return register = 0, bitString = 0000000000000010 if it is available', () => {
+        const next = FindAHole.findAHole([
+            { register: 0, bitString: '0000000000000001' },
+            { register: 1, bitString: '0000000000000010' }
+        ]);
+        const bit = 2;
+
+        next?.should.have.property('register', 0);
+        next?.should.have.property('bitString', bit.toString(2).padStart(16, '0'));
+    });
+
     it('should return register = 0, bitString = 000000000000100 if it is available', () => {
         const next = FindAHole.findAHole([
             { register: 0, bitString: '0000000000000001' },
