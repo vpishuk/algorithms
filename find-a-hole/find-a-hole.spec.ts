@@ -1,7 +1,7 @@
 import * as FindAHole from './find-a-hole';
 import * as chai from 'chai';
 
-const should = chai.should();
+chai.should();
 
 describe('FindAHole', () => {
     it('should return null if array is empty', () => {
@@ -219,7 +219,7 @@ describe('FindAHole', () => {
 
     it('should throw an error if array of models is not sorted by bitString in ascending order', () => {
         try {
-            const next = FindAHole.findAHole([
+            FindAHole.findAHole([
                 { register: 0, bitString: '0000000000000001' },
                 { register: 0, bitString: '0000000000000010' },
                 { register: 0, bitString: '0000000000000100' },
@@ -251,7 +251,7 @@ describe('FindAHole', () => {
 
     it('should throw an error if array of models is not sorted by register in ascending order', () => {
         try {
-            const next = FindAHole.findAHole([
+            FindAHole.findAHole([
                 { register: 1, bitString: '0000000000000001' },
                 { register: 0, bitString: '0000000000000001' }
             ]);

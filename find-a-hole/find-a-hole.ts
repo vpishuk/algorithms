@@ -9,7 +9,7 @@ interface Configurations {
  *
  * NOTE: An array of configurations should be sorted by register and then by bitString in ascending order
  */
-export function findAHole(configurations: Configurations[], bitStringLength: number = 16): Configurations | null {
+export function findAHole(configurations: Configurations[], bitStringLength = 16): Configurations | null {
     if (configurations.length <= 0) {
         return null;
     }
